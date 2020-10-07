@@ -13,7 +13,7 @@ function addToCart(item) {
   var price= Math.floor(Math.random()*100)
   cart.push({[item]: price})
   console.log(item+"has been added to your cart.")
-  return cart 
+  return cart
  // write your code here
 }
 
@@ -27,14 +27,14 @@ function viewCart() {
      let itemAndPrice=cart[i]
      let item=Object.keys(itemAndPrice)[0]
      let price= itemAndPrice[item]
-  itemsAndPrices.push(`${item} at \$${price}`)   
+  itemsAndPrices.push(`${item} at \$${price}`)
    }
    console.log(`In your cart, you habe ${itemsAndPrices.join(',')}.`)
 }
 
 function total() {
   let t=0
-  return t 
+  return t
   // write your code here
 }
 
@@ -49,7 +49,7 @@ function removeFromCart(item) {
   if (!itemInCart){
     console.log("That item is not in your cart.");
   }
-  return cart 
+  return cart
   // write your code here
 }
 
